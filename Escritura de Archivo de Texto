@@ -1,0 +1,16 @@
+# Vamos a abrir el archivo en modo escritura (creando el archivo si no existe)
+with open("my_notes.txt", "w") as archivo:
+    # Escribir cinco líneas de notas
+    archivo.write("Esta es mi primera nota de clases.\n")
+    archivo.write("Hoy aprendí sobre programación de escritura de textos.\n")
+    archivo.write("Mañana voy a empezar un nuevo proyecto de programacion.\n")
+    archivo.write("No olvidar tomar agua todos los dias.\n")
+    archivo.write("¡A seguir aprendiendo de programacion en Python!\n")
+
+# Abrir el archivo en modo lectura
+with open("my_notes.txt", "r") as archivo:
+    # Leer y mostrar cada línea
+    for linea in archivo:
+        print(linea.rstrip())  # Elimina los espacios en blanco al final de la línea
+
+print("¡Se ha terminado de leer el archivo!")
